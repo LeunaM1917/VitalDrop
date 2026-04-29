@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../asset/app_icon.png" rel="icon" type="image/png"/>
+<link href="../asset/app_icon.png" rel="apple-touch-icon"/>
+<title>Contact VitalDrop | Clinical Support &amp; Reassurance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#3e2c2a",
+                        "on-primary-container": "#fff2f0",
+                        "secondary-fixed": "#afefdd",
+                        "secondary-fixed-dim": "#94d3c1",
+                        "surface-container-highest": "#f9dcd9",
+                        "on-error": "#ffffff",
+                        "primary-fixed": "#ffdad6",
+                        "on-tertiary-fixed": "#001f2a",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#e4beba",
+                        "primary-container": "#d32f2f",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fff8f7",
+                        "outline": "#8f6f6c",
+                        "inverse-primary": "#ffb3ac",
+                        "surface": "#fff8f7",
+                        "on-secondary-container": "#2e6d5f",
+                        "tertiary": "#005f7b",
+                        "on-tertiary-fixed-variant": "#004d65",
+                        "on-secondary-fixed": "#00201a",
+                        "primary-fixed-dim": "#ffb3ac",
+                        "surface-container-high": "#ffe2de",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#ffedeb",
+                        "secondary-container": "#acedda",
+                        "on-primary-fixed-variant": "#930010",
+                        "on-tertiary-container": "#e9f7ff",
+                        "tertiary-fixed": "#bee9ff",
+                        "primary": "#af101a",
+                        "on-primary-fixed": "#410003",
+                        "background": "#fff8f7",
+                        "surface-dim": "#f1d3d0",
+                        "surface-variant": "#f9dcd9",
+                        "on-background": "#271816",
+                        "secondary": "#29695b",
+                        "surface-container": "#ffe9e7",
+                        "on-surface": "#271816",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#fff0ef",
+                        "on-secondary-fixed-variant": "#065043",
+                        "surface-tint": "#ba1a20",
+                        "on-error-container": "#93000a",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#00799c",
+                        "tertiary-fixed-dim": "#7bd1f8",
+                        "on-surface-variant": "#5b403d"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1200px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "md": "16px",
+                        "sm": "8px",
+                        "xl": "48px",
+                        "lg": "24px"
+                    },
+                    "fontFamily": {
+                        "h2": ["Manrope"],
+                        "h3": ["Manrope"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "h1": ["Manrope"],
+                        "label-caps": ["Inter"]
+                    },
+                    "fontSize": {
+                        "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                        "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .form-input-focus:focus {
+            border-color: #29695b; /* Trust Teal */
+            border-width: 2px;
+            outline: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-fixed selection:text-on-primary-fixed">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+<div class="flex justify-between items-center h-16 px-[70px] max-w-7xl mx-auto">
+<a class="flex items-center gap-2 text-red-700 no-underline hover:opacity-90" href="../home_vitaldrop/code.html">
+<img alt="" class="shrink-0 rounded-md" height="36" src="../asset/app_icon.png" style="width:36px;height:36px;object-fit:contain;" width="36"/>
+<span class="font-['Manrope'] text-2xl font-black leading-none">VitalDrop</span>
+            </a>
+<div class="hidden md:flex items-center gap-8 font-['Manrope'] text-sm font-semibold tracking-wide">
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../home_vitaldrop/code.html">Home</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../about_us_vitaldrop/code.html">About</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html">Products</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../promotional_video_vitaldrop/code.html">Video</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../join_the_network_vitaldrop/code.html">Join</a>
+<a class="text-red-700 border-b-2 border-red-700 pb-1" href="code.html">Contact</a>
+</div>
+<a class="bg-primary text-on-primary px-6 py-2 rounded-lg font-semibold hover:opacity-90 active:scale-95 duration-100 transition-all no-underline inline-block text-center" href="../join_the_network_vitaldrop/code.html">
+                Register
+            </a>
+</div>
+</nav>
+<main class="pt-24 pb-16">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-[70px] mb-xl">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-surface-container-lowest rounded-xl p-8 md:p-12 border border-outline-variant">
+<div>
+<span class="font-label-caps text-label-caps text-primary mb-4 block uppercase">Get in touch</span>
+<h1 class="font-h1 text-h1 text-on-surface mb-6">Contact VitalDrop.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-8 max-w-xl">
+                        Whether you're a donor with a question or a healthcare professional seeking partnership, our clinical team is ready to provide the precision and urgency your inquiry deserves.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 bg-secondary-container text-on-secondary-container px-4 py-2 rounded-full font-semibold">
+<span class="material-symbols-outlined" data-icon="verified">verified</span>
+<span>Clinical Support 24/7</span>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-high text-on-surface-variant px-4 py-2 rounded-full font-semibold">
+<span class="material-symbols-outlined" data-icon="schedule">schedule</span>
+<span>Average response: 2hrs</span>
+</div>
+</div>
+</div>
+<div class="relative h-[400px] rounded-xl overflow-hidden shadow-lg border border-outline-variant">
+<img alt="Contact VitalDrop Medical Support" class="w-full h-full object-cover" data-alt="Modern medical laboratory setting with a professional technician focused on a digital interface, clean sterile lighting, clinical blue and red tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMwQgi818Uw4fJLJl5DAMVwJ-TVWy2P6YdmItTQnKVcjZHz3oYjwdfGI6IvNKiYeLnk5HBfrXgQVUi-4k8h5wBAUQRqWaZryB0a4P883lkt_PygzUiV0_8iPbiSsXYbBEMFtgV_uXQRQJpmaJoisnWD45mZYvBLI1QuZOpAl-d4B1gnv6GiCpc1Dq3d5x911h-hV77dlttT7qr4goKkXNkHrdmc-_SGwQCOMhGcJLb6reUBdiUfI0XIxnOYNbMcZd-sChfmp7Q4YE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+</div>
+</section>
+<!-- Contact Methods Cards (Asymmetric Grid) -->
+<section class="max-w-7xl mx-auto px-[70px] mb-xl">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Email -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+<div class="w-12 h-12 bg-primary-fixed rounded-lg flex items-center justify-center text-primary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</div>
+<h3 class="font-h3 text-h3 mb-2">Email</h3>
+<p class="text-on-surface-variant mb-4">Official support channel</p>
+<a class="text-primary font-bold hover:underline" href="mailto:support@vitaldrop.com">support@vitaldrop.com</a>
+</div>
+<!-- Phone -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+<div class="w-12 h-12 bg-secondary-fixed rounded-lg flex items-center justify-center text-secondary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="call">call</span>
+</div>
+<h3 class="font-h3 text-h3 mb-2">Phone</h3>
+<p class="text-on-surface-variant mb-4">Direct clinical line</p>
+<a class="text-secondary font-bold hover:underline" href="tel:+6328880000">+63 965 086 3156</a>
+</div>
+<!-- Facebook -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+<div class="w-12 h-12 bg-tertiary-fixed rounded-lg flex items-center justify-center text-tertiary mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</div>
+<h3 class="font-h3 text-h3 mb-2">Facebook</h3>
+<p class="text-on-surface-variant mb-4">Community updates</p>
+<a class="text-tertiary font-bold hover:underline" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">fb.com/VitalDropPH</a>
+</div>
+<!-- Location -->
+<div class="bg-white p-8 rounded-xl border border-outline-variant hover:shadow-md transition-all group">
+<div class="w-12 h-12 bg-surface-container-high rounded-lg flex items-center justify-center text-on-surface mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="location_on">location_on</span>
+</div>
+<h3 class="font-h3 text-h3 mb-2">Location</h3>
+<p class="text-on-surface-variant mb-4">Panabo City, Philippines</p>
+<a class="text-on-surface font-bold hover:underline" href="https://www.google.com/maps/search/?api=1&amp;query=Manila%2C%20Philippines" target="_blank" rel="noopener noreferrer">View on Map</a>
+</div>
+</div>
+</section>
+<!-- Main Content Area (Form + Self Help) -->
+<section class="max-w-7xl mx-auto px-[70px] grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Contact Form (Bento Style Container) -->
+<div class="lg:col-span-7 bg-white p-8 md:p-12 rounded-xl border border-outline-variant shadow-sm">
+<h2 class="font-h2 text-h2 mb-8">Send a Message</h2>
+<form class="space-y-6" onsubmit="event.preventDefault(); var c=this.querySelector('input[type=checkbox]'); if(c &amp;&amp; !c.checked){ alert('Please accept the privacy consent to continue.'); return;} var s=this.querySelector('select'); var t=this.querySelector('textarea'); var n=this.querySelector('[name=vd_name]'); var e=this.querySelector('[name=vd_email]'); var subj='VitalDrop: '+(s?s.value:'Contact'); var body='Name: '+(n?n.value:'')+' — Email: '+(e?e.value:'')+' — Message: '+(t&amp;&amp;t.value?t.value:''); window.location.href='mailto:support@vitaldrop.com?subject='+encodeURIComponent(subj)+'&amp;body='+encodeURIComponent(body);">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-low border-outline-variant rounded-lg p-3 form-input-focus" name="vd_name" placeholder="Juan Dela Cruz" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-low border-outline-variant rounded-lg p-3 form-input-focus" name="vd_email" placeholder="juan@example.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Topic</label>
+<select class="w-full bg-surface-container-low border-outline-variant rounded-lg p-3 form-input-focus" name="vd_topic">
+<option>General Inquiry</option>
+<option>Donation Eligibility</option>
+<option>Appointment Modification</option>
+<option>Emergency Blood Request</option>
+<option>Partnership/Corporate</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps text-on-surface-variant">Your Message</label>
+<textarea class="w-full bg-surface-container-low border-outline-variant rounded-lg p-3 form-input-focus" name="vd_message" placeholder="How can our clinical team assist you today?" rows="5"></textarea>
+</div>
+<div class="flex items-start gap-3">
+<input class="mt-1 rounded text-primary focus:ring-primary" type="checkbox"/>
+<span class="text-sm text-on-surface-variant">I consent to the processing of my medical and personal data according to VitalDrop's Privacy Policy.</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg font-bold text-lg hover:opacity-90 active:scale-[0.98] transition-all shadow-md" type="submit">
+                        Send Secure Message
+                    </button>
+</form>
+</div>
+<!-- Self Help Sidebar -->
+<div class="lg:col-span-5 space-y-8">
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<h3 class="font-h3 text-h3 mb-6">Before you write</h3>
+<p class="text-on-surface-variant mb-6">Save time by checking our instant help guides for the most common donor concerns.</p>
+<div class="grid grid-cols-1 gap-3">
+<a class="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg hover:border-primary group transition-all" href="../join_the_network_vitaldrop/code.html#donor">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="account_circle">account_circle</span>
+<span class="font-semibold">Managing your Account</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg hover:border-error group transition-all" href="../join_the_network_vitaldrop/code.html#patient">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-error" data-icon="emergency">emergency</span>
+<span class="font-semibold">Emergency Requests</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg hover:border-secondary group transition-all" href="../join_the_network_vitaldrop/code.html#donor">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="fact_check">fact_check</span>
+<span class="font-semibold">Eligibility Requirements</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg hover:border-tertiary group transition-all" href="../join_the_network_vitaldrop/code.html#donor">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary" data-icon="event_available">event_available</span>
+<span class="font-semibold">Scheduling &amp; Rescheduling</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg hover:border-primary group transition-all" href="../join_the_network_vitaldrop/code.html#donor">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" data-icon="health_and_safety">health_and_safety</span>
+<span class="font-semibold">Post-Donation Care</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="flex items-center justify-between p-4 bg-white border border-outline-variant rounded-lg hover:border-outline group transition-all" href="../about_us_vitaldrop/code.html">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-on-surface" data-icon="help_center">help_center</span>
+<span class="font-semibold">Global Knowledge Base</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="h-64 rounded-xl overflow-hidden border border-outline-variant relative">
+<img alt="Location Map" class="w-full h-full object-cover" data-alt="Modern stylized map with clinical medical markers over Metro Manila area, soft minimalist color palette" data-location="Philippines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYFyYI8xKj4c3wVtG95ucPGTFDKZH9UJ7-Q4mtJ7O7HVpKdNzTJW1ckTKfeQYKJ1pafuf0ZGnlLQFLdGInQ3XfsfYFo-q0I6mERW9i6NypV7EkBl4IuAr4vbwySbb7IEDtWfgSfoKdGnczAWpv754RMsmIIULsDJHvzGFnq_b_9osUwDz7haoyikLumoxkOYwQOFNOuPi9Qwd8o6OasKdZadXUr-hmQKmR05lJoBmgeLUcMXsgc4RCdQZLNq2eemEAw1yDVN0-5qY"/>
+<div class="absolute bottom-4 left-4 bg-white px-4 py-2 rounded shadow-md border border-outline-variant flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-semibold text-sm">VitalDrop HQ - Manila</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonial Carousel Section -->
+<section class="max-w-7xl mx-auto px-[70px] mt-xl">
+<h2 class="font-h2 text-h2 text-center mb-12">Donor Community Voices</h2>
+<div class="flex flex-col md:flex-row gap-6 overflow-hidden">
+<!-- Testimonial 1 -->
+<div class="flex-1 bg-white p-8 rounded-xl border border-outline-variant shadow-sm relative">
+<span class="material-symbols-outlined text-primary-fixed-dim text-6xl absolute top-4 right-4 opacity-50" data-icon="format_quote">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+<img alt="Donor Profile" class="w-full h-full object-cover" data-alt="Portrait of a smiling Filipino man in his 30s, warm natural lighting, professional and friendly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0VNSBnj8yXpDGgfBteM23dco6Mt7Vh51WevoHqmk_tQo_iddj2css3WptJxRZcRTuc68DFkDd2QJ_5dQATPWGEPJdHfq_YnOtaLfU2oVwn9sn533-vcOTRGSwOQK1-SpfLM6uTjiDWdkcOecieV-pJSA0s5bsrv8vpC3l28uUXXPXYZGqhQJhax8OTcB9DmcxFN5SwIQQ1wxasbSGoaXfwjEcnMk3asuTop_ttXl-VgzMmIQNiWrWCM9Azhyl1iqpKEdlX_kyjGE"/>
+</div>
+<div>
+<h4 class="font-bold">Ricardo Santos</h4>
+<p class="text-sm text-on-surface-variant">Regular Donor since 2021</p>
+</div>
+</div>
+<p class="italic text-on-surface-variant">"The communication with the VitalDrop team is unmatched. I had a question about my iron levels and they responded with a clinical detailed guide within an hour. They really care."</p>
+</div>
+<!-- Testimonial 2 -->
+<div class="flex-1 bg-white p-8 rounded-xl border border-outline-variant shadow-sm relative">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-6xl absolute top-4 right-4 opacity-50" data-icon="format_quote">format_quote</span>
+<div class="flex items-center gap-4 mb-6">
+<div class="w-12 h-12 rounded-full bg-slate-200 overflow-hidden">
+<img alt="Donor Profile" class="w-full h-full object-cover" data-alt="Portrait of a professional woman in her late 20s, confident smile, clinical or office background blurred" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIHzXfSeVKiRqh0NpAVNB53_SrZBxdNBtoO9adVIfkVL4UcV3WDqH-2MSQg_huwMj4fAs6EqGuL8N5Uf1Jybdyie9fHvBHOtcQ-qhsPlZeVJ85uzWjjCcILZ8dnQfS7i8V3oe1Y9lo2sPrvaznVKwM0FQBAGNfkBUEMurLMMOlGShEtouPnQTb9_eDU8sjwCYdnXjzHf2tVzrvLe1diq1iw2Emc4hjNntMt5RR17yCtGBsDFBwpu99B35XjLwXvoII95QJUw2Dgag"/>
+</div>
+<div>
+<h4 class="font-bold">Elena Cruz</h4>
+<p class="text-sm text-on-surface-variant">Hospital Logistics Manager</p>
+</div>
+</div>
+<p class="italic text-on-surface-variant">"VitalDrop's responsiveness is critical for our facility. When we need specific blood types, their support team coordinates with donors instantly. It saves lives."</p>
+</div>
+</div>
+<!-- Pagination Indicators -->
+<div class="flex justify-center gap-2 mt-8">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200">
+<div class="max-w-[1440px] mx-auto px-8 md:px-[70px] py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Manrope'] text-sm text-slate-500">
+<div class="col-span-1 md:col-span-1">
+<a class="mb-4 flex items-center gap-2 text-xl font-bold text-red-700 no-underline hover:opacity-90" href="../home_vitaldrop/code.html">
+<img alt="" class="shrink-0 rounded-md" height="32" src="../asset/app_icon.png" style="width:32px;height:32px;object-fit:contain;" width="32"/>
+<span>VitalDrop</span>
+</a>
+<p class="mb-4">Biological urgency. Technological precision. Clinical reliability.</p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Solutions</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#inventory">Inventory Tracking</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#emergency">Emergency SOS</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#matching">Donor Matching</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#management">Drive Management</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Company</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-red-600 transition-colors" href="../about_us_vitaldrop/code.html">About Us</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../contact_us_vitaldrop/code.html">Privacy Policy</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../contact_us_vitaldrop/code.html">Security</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../contact_us_vitaldrop/code.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Connect</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined hover:text-red-600 cursor-pointer">public</span>
+<span class="material-symbols-outlined hover:text-red-600 cursor-pointer">alternate_email</span>
+<span class="material-symbols-outlined hover:text-red-600 cursor-pointer">call</span>
+</div>
+<p class="mt-6 text-xs">© VitalDrop. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>

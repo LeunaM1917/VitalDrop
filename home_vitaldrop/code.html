@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../asset/app_icon.png" rel="icon" type="image/png"/>
+<link href="../asset/app_icon.png" rel="apple-touch-icon"/>
+<title>VitalDrop | Connecting Lives Through Smart Blood Donation</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "inverse-surface": "#3e2c2a",
+                    "on-primary-container": "#fff2f0",
+                    "secondary-fixed": "#afefdd",
+                    "secondary-fixed-dim": "#94d3c1",
+                    "surface-container-highest": "#f9dcd9",
+                    "on-error": "#ffffff",
+                    "primary-fixed": "#ffdad6",
+                    "on-tertiary-fixed": "#001f2a",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "outline-variant": "#e4beba",
+                    "primary-container": "#d32f2f",
+                    "error": "#ba1a1a",
+                    "surface-bright": "#fff8f7",
+                    "outline": "#8f6f6c",
+                    "inverse-primary": "#ffb3ac",
+                    "surface": "#fff8f7",
+                    "on-secondary-container": "#2e6d5f",
+                    "tertiary": "#005f7b",
+                    "on-tertiary-fixed-variant": "#004d65",
+                    "on-secondary-fixed": "#00201a",
+                    "primary-fixed-dim": "#ffb3ac",
+                    "surface-container-high": "#ffe2de",
+                    "error-container": "#ffdad6",
+                    "inverse-on-surface": "#ffedeb",
+                    "secondary-container": "#acedda",
+                    "on-primary-fixed-variant": "#930010",
+                    "on-tertiary-container": "#e9f7ff",
+                    "tertiary-fixed": "#bee9ff",
+                    "primary": "#af101a",
+                    "on-primary-fixed": "#410003",
+                    "background": "#fff8f7",
+                    "surface-dim": "#f1d3d0",
+                    "surface-variant": "#f9dcd9",
+                    "on-background": "#271816",
+                    "secondary": "#29695b",
+                    "surface-container": "#ffe9e7",
+                    "on-surface": "#271816",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#fff0ef",
+                    "on-secondary-fixed-variant": "#065043",
+                    "surface-tint": "#ba1a20",
+                    "on-error-container": "#93000a",
+                    "surface-container-lowest": "#ffffff",
+                    "tertiary-container": "#00799c",
+                    "tertiary-fixed-dim": "#7bd1f8",
+                    "on-surface-variant": "#5b403d"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "gutter": "24px",
+                    "xs": "4px",
+                    "base": "8px",
+                    "md": "16px",
+                    "sm": "8px",
+                    "xl": "48px",
+                    "lg": "24px"
+            },
+            "fontFamily": {
+                    "h2": ["Manrope"],
+                    "h3": ["Manrope"],
+                    "body-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "h1": ["Manrope"],
+                    "label-caps": ["Inter"]
+            },
+            "fontSize": {
+                    "h2": ["32px", {"lineHeight": "1.3", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "h3": ["24px", {"lineHeight": "1.4", "letterSpacing": "0", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "letterSpacing": "0", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "letterSpacing": "0", "fontWeight": "400"}],
+                    "h1": ["48px", {"lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { background-color: #fff8f7; color: #271816; }
+    </style>
+</head>
+<body class="font-body-md text-on-background">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-slate-100 shadow-sm">
+<div class="flex justify-between items-center h-16 px-8 md:px-[70px] max-w-7xl mx-auto">
+<a class="flex items-center gap-2 text-red-700 no-underline hover:opacity-90" href="code.html">
+<img alt="" class="shrink-0 rounded-md" height="36" src="../asset/app_icon.png" style="width:36px;height:36px;object-fit:contain;" width="36"/>
+<span class="font-['Manrope'] text-2xl font-black leading-none">VitalDrop</span>
+        </a>
+<div class="hidden md:flex items-center gap-8 font-['Manrope'] text-sm font-semibold tracking-wide">
+<a class="text-red-700 border-b-2 border-red-700 pb-1" href="code.html">Home</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../about_us_vitaldrop/code.html">About</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html">Products</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../promotional_video_vitaldrop/code.html">Video</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../join_the_network_vitaldrop/code.html">Join</a>
+<a class="text-slate-600 hover:text-red-600 transition-colors" href="../contact_us_vitaldrop/code.html">Contact</a>
+</div>
+<div class="flex items-center gap-4">
+<a class="bg-primary text-white px-5 py-2 rounded-lg font-h3 text-sm hover:opacity-90 transition-all active:scale-95 duration-100 no-underline inline-block text-center" href="../join_the_network_vitaldrop/code.html">Register</a>
+<button class="md:hidden text-on-background">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-16">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-surface">
+<div class="max-w-7xl mx-auto px-8 md:px-[70px] grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10 py-12">
+<div>
+<span class="inline-block px-3 py-1 bg-primary-fixed text-on-primary-fixed-variant rounded-full text-label-caps mb-6">RELIABLE BLOOD ACCESS</span>
+<h1 class="font-h1 text-h1 text-on-background mb-4">VitalDrop</h1>
+<h2 class="font-h2 text-h2 text-primary mb-6">Connecting Lives Through Smart Blood Donation.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                    VitalDrop is a digital platform that connects hospitals, donors, and patients in real-time to ensure fast and reliable access to blood during emergencies. We make blood donation smarter, faster, and more accessible.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all no-underline inline-block text-center" href="../join_the_network_vitaldrop/code.html#donor">Register as Donor</a>
+<a class="border-2 border-secondary text-secondary px-8 py-4 rounded-xl font-semibold hover:bg-secondary-container/20 transition-all no-underline inline-block text-center" href="../contact_us_vitaldrop/code.html">Partner with Us</a>
+</div>
+<div class="mt-8 flex items-center gap-6">
+<a class="flex items-center gap-2 text-tertiary font-medium hover:underline no-underline" href="../join_the_network_vitaldrop/code.html#patient">
+<span class="material-symbols-outlined">patient_list</span> Register as Patient
+                    </a>
+<a class="flex items-center gap-2 text-tertiary font-medium hover:underline no-underline" href="../join_the_network_vitaldrop/code.html#app">
+<span class="material-symbols-outlined">phone_iphone</span> Download the App
+                    </a>
+</div>
+</div>
+<div class="relative">
+<div class="absolute inset-0 bg-primary/5 rounded-3xl transform rotate-3"></div>
+<img alt="Professional medical blood unit bag in storage" class="relative z-10 rounded-3xl shadow-2xl border border-outline-variant" data-alt="Modern medical laboratory dashboard interface with clean data visualization showing blood inventory levels and logistics mapping" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeSRol2razv6pexB1dA94pcepye3fv49k19PMl_Up77FSoJTdJeT9ggQnKlzWp2gh6hYxS0T9wIgV5eXcKwCQ94fl0mjg-_gfLWc1k-f_RXz1N0SuFPiwWNmldi0tmjt-g_DYRjW3k52rimTs_hKMdZzFDkBG8QZWcEIqXvJedtpcEX7Xta4tYYOmRH_A9kMBN_Wxi7mdpY2yPQRcfW7uSkgrPfO2ouJ_k99SO2eaomXUKr9tdZILMdenGSmWRqm2nMX52_9sMSDY"/>
+</div>
+</div>
+</section>
+<!-- Trust Strip -->
+<section class="bg-surface-container-low py-10 border-y border-outline-variant">
+<div class="max-w-7xl mx-auto px-8 md:px-[70px] flex flex-wrap justify-around gap-8 text-on-surface-variant">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">security</span>
+<span class="font-semibold">Privacy-by-design</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">verified_user</span>
+<span class="font-semibold">Verified Network</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">speed</span>
+<span class="font-semibold">Emergency Speed</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary">health_and_safety</span>
+<span class="font-semibold">Medical Precision</span>
+</div>
+</div>
+</section>
+<!-- Why Timing Matters (Bento-style Cards) -->
+<section class="py-24 max-w-7xl mx-auto px-8 md:px-[70px]">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-white p-10 rounded-3xl border border-outline-variant shadow-sm flex flex-col justify-center">
+<h2 class="font-h2 text-h2 mb-6">Why timing matters</h2>
+<div class="space-y-4 font-body-lg text-on-surface-variant">
+<p>In the wake of natural disasters like typhoons, the gap between a need and its fulfillment can be life or death. Traditional communication loops are often fragmented, leading to critical delays in blood delivery.</p>
+<p>VitalDrop closes these gaps by unifying inventory data across regions, ensuring that even when local supplies are compromised, the nearest verified alternative is identified and mobilized instantly.</p>
+</div>
+</div>
+<div class="md:col-span-4 bg-primary text-on-primary p-10 rounded-3xl relative overflow-hidden flex flex-col justify-end">
+<div class="absolute top-0 right-0 p-8 opacity-20">
+<span class="material-symbols-outlined text-[120px]">emergency</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4">Urgent Response</h3>
+<p class="text-on-primary/80">Every 2 seconds, someone needs blood. We reduce the triage-to-delivery time by up to 40%.</p>
+</div>
+</div>
+</section>
+<!-- How VitalDrop Works (Timeline) -->
+<section class="py-24 bg-surface-container">
+<div class="mx-auto px-8 max-w-7xl md:px-[70px]">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 mb-4">How VitalDrop works</h2>
+<p class="text-on-surface-variant">Seamless logistics from the first request to the final audit.</p>
+</div>
+<div class="relative">
+<!-- Vertical Line -->
+<div class="absolute left-[15px] md:left-1/2 top-0 bottom-0 w-1 bg-secondary-container"></div>
+<div class="space-y-16">
+<!-- Step 1 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2 md:order-1">
+<h3 class="font-h3 text-h3 text-primary">Request &amp; triage</h3>
+<p class="text-on-surface-variant">Hospitals enter needs via an AI-assisted portal that prioritizes based on urgency and blood type rarity.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-secondary border-4 border-white z-10 order-1 md:order-2"></div>
+<div class="md:w-1/2 md:pl-12 order-3"></div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-secondary border-4 border-white z-10 order-1 md:order-2"></div>
+<div class="md:w-1/2 md:pl-12 order-3">
+<h3 class="font-h3 text-h3 text-primary">Inventory visibility</h3>
+<p class="text-on-surface-variant">Real-time tracking of blood banks ensures we know exactly where every unit is located across the network.</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2 md:order-1">
+<h3 class="font-h3 text-h3 text-primary">Donor &amp; network activation</h3>
+<p class="text-on-surface-variant">Smart notifications are sent to the most eligible donors in the vicinity, bypassing noise to find heroes.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-secondary border-4 border-white z-10 order-1 md:order-2"></div>
+<div class="md:w-1/2 md:pl-12 order-3"></div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col md:flex-row items-center">
+<div class="md:w-1/2 md:pr-12 order-2 md:order-1"></div>
+<div class="absolute left-0 md:left-1/2 transform -translate-x-1/2 w-8 h-8 rounded-full bg-secondary border-4 border-white z-10 order-1 md:order-2"></div>
+<div class="md:w-1/2 md:pl-12 order-3">
+<h3 class="font-h3 text-h3 text-primary">Fulfillment &amp; audit trail</h3>
+<p class="text-on-surface-variant">Every drop is logged. A complete blockchain-backed audit trail ensures safety and accountability at every step.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Who it's for -->
+<section class="py-24 max-w-7xl mx-auto px-8 md:px-[70px]">
+<h2 class="font-h2 text-h2 mb-16 text-center">Who it's for</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="p-8 bg-white rounded-3xl border border-outline-variant hover:border-primary transition-all group">
+<div class="w-14 h-14 bg-primary-container text-on-primary-container rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">personal_injury</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4">Patients</h3>
+<p class="text-on-surface-variant mb-6">Fast-track your blood requests and get real-time updates on your status during emergencies.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all no-underline" href="../products_services_vitaldrop/code.html">Learn More <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="p-8 bg-white rounded-3xl border border-outline-variant hover:border-primary transition-all group">
+<div class="w-14 h-14 bg-secondary-container text-on-secondary-container rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4">Donors</h3>
+<p class="text-on-surface-variant mb-6">Join an elite network of life-savers. Get notified when your specific blood type is in critical demand nearby.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all no-underline" href="../products_services_vitaldrop/code.html">Learn More <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+<div class="p-8 bg-white rounded-3xl border border-outline-variant hover:border-primary transition-all group">
+<div class="w-14 h-14 bg-tertiary-container text-on-tertiary-container rounded-2xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-3xl">apartment</span>
+</div>
+<h3 class="font-h3 text-h3 mb-4">Hospitals</h3>
+<p class="text-on-surface-variant mb-6">Optimize your blood bank inventory and tap into a wider, verified donor pool with automated logistics.</p>
+<a class="text-primary font-bold flex items-center gap-1 group-hover:gap-2 transition-all no-underline" href="../products_services_vitaldrop/code.html">Learn More <span class="material-symbols-outlined">chevron_right</span></a>
+</div>
+</div>
+</section>
+<!-- Mid-page CTA band -->
+<section class="max-w-7xl mx-auto px-8 md:px-[70px] mb-24">
+<div class="py-16 px-8 md:px-[70px] rounded-3xl bg-inverse-surface text-on-primary-container overflow-hidden relative">
+<div class="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-primary/20 to-transparent"></div>
+<div class="relative z-10 max-w-4xl">
+<h2 class="font-h1 text-h2 mb-4">When minutes matter...</h2>
+<p class="font-body-lg text-body-lg text-white/80 mb-8 max-w-2xl">Don't leave survival to chance. Join the ecosystem that turns chaos into coordinated care. Whether you're a donor or a healthcare provider, your presence saves lives.</p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary px-8 py-3 rounded-xl font-bold hover:bg-red-600 transition-colors">Get Started Now</button>
+<button class="border border-white/30 px-8 py-3 rounded-xl font-bold hover:bg-white/10 transition-colors">See Statistics</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Latest from VitalDrop -->
+<section class="py-24 max-w-7xl mx-auto px-8 md:px-[70px]">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h2 class="font-h2 text-h2">Latest from VitalDrop</h2>
+<p class="text-on-surface-variant">Insights into med-tech innovation and community impact.</p>
+</div>
+<a class="text-primary font-bold hover:underline hidden md:block no-underline" href="../about_us_vitaldrop/code.html">View all articles</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<article class="flex flex-col">
+<img alt="Digital healthcare" class="rounded-2xl mb-4 aspect-video object-cover" data-alt="Close up of a doctor using a tablet computer in a high-tech hospital environment with soft clinical lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-OGvQqEJhgQUIoWL7qBgGnXdbKnfqI_C9N-ped4Xbfyv3JU8kAK4k-Bv2WctXb0Al38GENYc6Yr1arlDA629_bK4XEvI6pbmEOmDkaGWeqRv-0bG9DJWyzti-NAC3BV_bmTXuzXhPwOMHBtUBLyY7iMDxzsL7hJYRf2cchhPZidGKi0YTVkXX3mUDQf6vnN8aU89h6JKfahY6azhBby9ldYgtUq7jmz_KyegfgAFWwP4GvGUNA_6lvdbGTwA66CCIbEO83zHCfSQ"/>
+<span class="text-label-caps text-secondary font-bold mb-2">TECHNOLOGY</span>
+<h3 class="font-h3 text-[20px] mb-2">How AI is Predicting Blood Type Demand</h3>
+<p class="text-on-surface-variant text-sm mb-4">Predictive analytics help us move blood where it's needed before the emergency even peaks.</p>
+<a class="mt-auto font-semibold text-primary no-underline" href="../about_us_vitaldrop/code.html">Read Article</a>
+</article>
+<article class="flex flex-col">
+<img alt="Blood bag" class="rounded-2xl mb-4 aspect-video object-cover" data-alt="A blood donation bag with red fluid being carefully handled in a sterile, modern medical storage facility" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeSRol2razv6pexB1dA94pcepye3fv49k19PMl_Up77FSoJTdJeT9ggQnKlzWp2gh6hYxS0T9wIgV5eXcKwCQ94fl0mjg-_gfLWc1k-f_RXz1N0SuFPiwWNmldi0tmjt-g_DYRjW3k52rimTs_hKMdZzFDkBG8QZWcEIqXvJedtpcEX7Xta4tYYOmRH_A9kMBN_Wxi7mdpY2yPQRcfW7uSkgrPfO2ouJ_k99SO2eaomXUKr9tdZILMdenGSmWRqm2nMX52_9sMSDY"/>
+<span class="text-label-caps text-secondary font-bold mb-2">IMPACT</span>
+<h3 class="font-h3 text-[20px] mb-2">Scaling Response for Typhoon Season</h3>
+<p class="text-on-surface-variant text-sm mb-4">Lessons learned from recent seasonal emergencies and how our network held strong.</p>
+<a class="mt-auto font-semibold text-primary no-underline" href="../about_us_vitaldrop/code.html">Read Article</a>
+</article>
+<article class="flex flex-col">
+<img alt="Medical team" class="rounded-2xl mb-4 aspect-video object-cover" data-alt="A team of diverse medical professionals in blue scrubs smiling while walking down a brightly lit hospital corridor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxSm2G-6-kym0B-yp6wwVSm4Lyzwlh9KSbd3jWoWh1LDmwg1FOwjSmuESLoyJX4C5qFGYAObH74x6Ol9_qUnQx53YebMHlGgN_wns8ELcHM3RdVUlZpUJgIDTdghYfm1sw4134TMYfT9hod68Ji6X6eU3umUSOyRhqhVeW3MMtpYWMui6MpLGiUEcDtgl58ZD8CXZivyCYo5K0jh5XPLWnZVhycO_yZ6AcErY0zufvHeIfWSDw9-wTUDLCAZ7ephhAOrOLTyo7TrQ"/>
+<span class="text-label-caps text-secondary font-bold mb-2">COMMUNITY</span>
+<h3 class="font-h3 text-[20px] mb-2">Partnering for Life: 100 New Hospitals</h3>
+<p class="text-on-surface-variant text-sm mb-4">Welcoming our newest healthcare partners into the VitalDrop regional ecosystem.</p>
+<a class="mt-auto font-semibold text-primary no-underline" href="../about_us_vitaldrop/code.html">Read Article</a>
+</article>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200">
+<div class="max-w-[1440px] mx-auto px-8 md:px-[70px] py-16 grid grid-cols-1 md:grid-cols-4 gap-12 font-['Manrope'] text-sm text-slate-500">
+<div class="col-span-1 md:col-span-1">
+<a class="mb-4 flex items-center gap-2 text-xl font-bold text-red-700 no-underline hover:opacity-90" href="code.html">
+<img alt="" class="shrink-0 rounded-md" height="32" src="../asset/app_icon.png" style="width:32px;height:32px;object-fit:contain;" width="32"/>
+<span>VitalDrop</span>
+</a>
+<p class="mb-4">Biological urgency. Technological precision. Clinical reliability.</p>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Solutions</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#inventory">Inventory Tracking</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#emergency">Emergency SOS</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#matching">Donor Matching</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../products_services_vitaldrop/code.html#management">Drive Management</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Company</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-red-600 transition-colors" href="../about_us_vitaldrop/code.html">About Us</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../contact_us_vitaldrop/code.html">Privacy Policy</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../contact_us_vitaldrop/code.html">Security</a></li>
+<li><a class="hover:text-red-600 transition-colors" href="../contact_us_vitaldrop/code.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-slate-900 mb-4 uppercase text-xs tracking-widest">Connect</h4>
+<div class="flex gap-4">
+<span class="material-symbols-outlined hover:text-red-600 cursor-pointer">public</span>
+<span class="material-symbols-outlined hover:text-red-600 cursor-pointer">alternate_email</span>
+<span class="material-symbols-outlined hover:text-red-600 cursor-pointer">call</span>
+</div>
+<p class="mt-6 text-xs">© VitalDrop. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</body></html>
